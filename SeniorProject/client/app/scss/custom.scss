@@ -1,0 +1,338 @@
+/*******************************************************************
+ $$$$$$\                        $$\                             
+$$  __$$\                       $$ |                            
+$$ /  \__|$$\   $$\  $$$$$$$\ $$$$$$\    $$$$$$\  $$$$$$\$$$$\  
+$$ |      $$ |  $$ |$$  _____|\_$$  _|  $$  __$$\ $$  _$$  _$$\ 
+$$ |      $$ |  $$ |\$$$$$$\    $$ |    $$ /  $$ |$$ / $$ / $$ |
+$$ |  $$\ $$ |  $$ | \____$$\   $$ |$$\ $$ |  $$ |$$ | $$ | $$ |
+\$$$$$$  |\$$$$$$  |$$$$$$$  |  \$$$$  |\$$$$$$  |$$ | $$ | $$ |
+ \______/  \______/ \_______/    \____/  \______/ \__| \__| \__|
+*******************************************************************/
+
+$void: #0e0b16;
+$purple: #a239ca;
+$neon-purple: #4717f6;
+$stark: #e7dfdd;
+$gray: rgb(230, 230, 230);
+
+$navbar-height: 40px;
+
+
+body {
+    background-color: $stark;
+    width: 100%;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, ul, ol, li, small {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent; 
+}
+nav ul li a,
+
+nav ul li a:focus,
+
+nav ul li a:visited,
+
+nav ul li a:hover,
+
+nav ul li a:active {
+
+  text-decoration: none; 
+}
+
+.profile-nav a,
+
+.profile-nav a:focus,
+
+.profile-nav a:visited,
+
+.profile-nav a:hover,
+
+.profile-nav a:active {
+
+  text-decoration: none; 
+}
+
+nav ul li a:hover, nav ul li a:active, .profile-nav a:hover {
+    background-color: $neon-purple; 
+    color: $stark !important;
+}
+
+.active-nav a {
+    background-color: $neon-purple; 
+    color: $stark;
+}
+
+.not-active-nav a {
+    background-color: $void;
+    color: $stark;
+}
+
+.nav-item a {
+    display: block;
+    width: 100%; 
+    text-align: center;
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+}
+
+nav {
+    width: 100%;
+    margin: 0;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0px 1px 0px $purple;
+}
+
+.my-nav-bar {
+    display: flex;
+}
+
+.profile-nav {
+    display: table;
+    width: 25%;
+}
+
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    width: 25%;
+    float: left;
+}
+
+.test {
+    width: 100%;
+    height: 50vh;
+    padding: 5px;
+}
+
+.card {
+    width: 100%;
+    background-color: $void;
+    color: $stark;
+}
+
+.card-header {
+    background-color: $neon-purple;
+}
+.run-row .card{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.main-row {
+    padding-top: ($navbar-height + 10px);
+}
+.main-row .card {
+}
+.fav-wk-button {
+    float: right;
+}
+
+.login-wrapper{
+    left: 35vw;
+    top: 25vh;
+    position: fixed;
+    width: 500px;
+    background-color: $neon-purple;
+    color: white;
+    padding: 10px;
+    font-size: 26px;
+}
+.profile-stats{
+    padding: 15px;
+}
+
+.login-input-row, .login-input, .login-label{
+    margin: 0;
+    padding: 0;
+}
+
+.login-input-button{
+    cursor: pointer;
+}
+
+.my-workouts {
+    font-size: 47px;
+    text-align: center;
+}
+.main-graph .card{
+    height: 100%;
+    background-color: $gray;
+}
+
+.graph-block{
+    background-color: $gray;
+}
+.tab a{
+    background-color: $void;
+}
+.container {
+    margin: 0;
+    width: 100vw !important;
+    height: 100vh;
+}
+
+.run-row {
+    // display: inline;
+    padding: 5px;
+}
+
+.run {
+    padding: 2px;
+}
+
+.full-width {
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+}
+
+.half-screen-button {
+    width: 100%;
+}
+
+.add-set{
+    float: right;
+    background-color: $stark;
+    color: $void;
+    font-size: 10px;
+}
+.add-set-label{
+    float: right;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.icon-btn {
+    width: 20px;
+    height:20px;
+    margin: auto;
+}
+
+.add-ex-btn{
+    background-color: $neon-purple;
+    color: $stark;
+}
+.add-ex-btn:hover{
+    opacity: .75;
+    cursor: pointer;
+}
+
+.add-cardio-btn{
+    background-color: $neon-purple;
+    color: $stark;
+}
+.add-cardio-btn:hover{
+    opacity: .75;
+    cursor: pointer;
+}
+
+.icon-with-text i{
+    margin-right: 5px;
+}
+
+.date-range {
+    margin: auto;
+}
+
+.profile-header {
+    text-align: -webkit-center;
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+}
+
+.user-profile{
+    margin: auto;
+    padding-top: 5px;
+}
+
+.user-header{
+    display: block;
+}
+
+.edit-profile{
+    float: right;
+}
+
+.settings-header{
+    text-align: -webkit-center;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.profile-row{
+    text-align: center;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.edit-graph-header{
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+
+
+.save-workout-button {
+    position: fixed;
+    top: 95vh;
+}
+
+.save-workout {
+    cursor: pointer;
+}
+
+.saved-icon {
+    top: 10px;
+}
+
+.add-workout-wrapper {
+    
+}
+.add-workout-circle-button {
+    background-color: #4CAF50;
+    border-radius: 50%;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    top: 91vh;
+    left: 94vw;
+    position: fixed;
+    height: 75px;
+    width:75px;
+    cursor: pointer;
+}
+
+.view-workout-click {
+    cursor: pointer;
+}
+
+.delete-card-button {
+    float: right;
+    cursor: pointer;
+}
+
+.fav-header {
+    font-size: 48px;
+    text-align: center;
+}

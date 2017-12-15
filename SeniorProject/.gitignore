@@ -1,0 +1,22 @@
+# dependencies
+node_modules/
+elm-stuff/
+.stack-work/
+.fusebox
+
+# testing
+coverage
+
+# production
+build
+src/client/dist
+
+# misc
+.DS_Store
+.env
+npm-debug.log.*
+
+*.cabal
+
+client/static/app.js
+client/elm/Shared/Generated.elm
